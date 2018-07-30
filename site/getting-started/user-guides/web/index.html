@@ -1,0 +1,1591 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://h.cash/getting-started/user-guides/web/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.7.2">
+    
+    
+      
+        <title>Web Wallet - HC Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.78aab2dc.css">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+      <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../../css/style.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#web-client-user-guide" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://h.cash" title="HC Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../../img/favicon.ico" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                HC Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Web Wallet
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/HcashOrg/hcwiki/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      HC/hcwiki
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <img src="../../../img/favicon.ico" width="48" height="48">
+      
+    </span>
+    HC Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/HcashOrg/hcwiki/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      HC/hcwiki
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../beginner-guide/" title="Beginner's Guide" class="md-nav__link">
+      Beginner's Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../obtaining-hc/" title="Obtaining HC" class="md-nav__link">
+      Obtaining HC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../using-the-block-explorer/" title="Using the Block Explorer" class="md-nav__link">
+      Using the Block Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../agenda-voting/" title="Mainnet Voting" class="md-nav__link">
+      Mainnet Voting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to-vote/" title="How To Vote" class="md-nav__link">
+      How To Vote
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../using-testnet/" title="Using Testnet" class="md-nav__link">
+      Using Testnet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../constitution/" title="HC Constitution" class="md-nav__link">
+      HC Constitution
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Wallets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Wallets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      hcGUI (GUI)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        hcGUI (GUI)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hcGUI-setup/" title="hcGUI Setup" class="md-nav__link">
+      hcGUI Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../using-hcGUI/" title="Using hcGUI" class="md-nav__link">
+      Using hcGUI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      CLI Wallet
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        CLI Wallet
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cli-installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli-differences/" title="OS Differences" class="md-nav__link">
+      OS Differences
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../startup-basics/" title="Startup Basics" class="md-nav__link">
+      Startup Basics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hcd-setup/" title="hcd Setup" class="md-nav__link">
+      hcd Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hcwallet-setup/" title="hcwallet Setup" class="md-nav__link">
+      hcwallet Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hcctl-basics/" title="hcctl Basics" class="md-nav__link">
+      hcctl Basics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hcwallet-tickets/" title="Buying Tickets" class="md-nav__link">
+      Buying Tickets
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Web Wallet
+      </label>
+    
+    <a href="./" title="Web Wallet" class="md-nav__link md-nav__link--active">
+      Web Wallet
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-web-client-wallet" title=" Create your web client wallet" class="md-nav__link">
+     Create your web client wallet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#send-funds-with-the-web-client" title=" Send funds with the web client" class="md-nav__link">
+     Send funds with the web client
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#receive-funds-with-the-web-client" title=" Receive funds with the web client" class="md-nav__link">
+     Receive funds with the web client
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Proof-of-Stake Mining
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Proof-of-Stake Mining
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mining/proof-of-stake/" title="What is Proof-of-Stake?" class="md-nav__link">
+      What is Proof-of-Stake?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mining/how-to-stake/" title="How to Stake" class="md-nav__link">
+      How to Stake
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      PoS FAQ
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        PoS FAQ
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq/proof-of-stake/general/" title="General" class="md-nav__link">
+      General
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq/proof-of-stake/solo-mining/" title="Solo Mining" class="md-nav__link">
+      Solo Mining
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq/proof-of-stake/buying-tickets-and-fees/" title="Buying Tickets and Fees" class="md-nav__link">
+      Buying Tickets and Fees
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq/proof-of-stake/voting-tickets/" title="Voting Tickets" class="md-nav__link">
+      Voting Tickets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq/proof-of-stake/stake-pools/" title="Stake Pools" class="md-nav__link">
+      Stake Pools
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Proof-of-Work Mining
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Proof-of-Work Mining
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mining/proof-of-work/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mining/proof-of-work/pool-mining/gominer/" title="gominer Pool Mining" class="md-nav__link">
+      gominer Pool Mining
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq/proof-of-work-mining/" title="PoW FAQ" class="md-nav__link">
+      PoW FAQ
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      FAQ
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        FAQ
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq/general/" title="General" class="md-nav__link">
+      General
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq/configuration/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq/wallets-and-seeds/" title="Wallets and Seeds" class="md-nav__link">
+      Wallets and Seeds
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq/web-client/" title="Web Client" class="md-nav__link">
+      Web Client
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq/blocks/" title="Blocks" class="md-nav__link">
+      Blocks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq/errors/" title="Common Errors and Solutions" class="md-nav__link">
+      Common Errors and Solutions
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Advanced
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Advanced
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../advanced/manual-cli-install/" title="Manual CLI Installation" class="md-nav__link">
+      Manual CLI Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../advanced/storing-login-details/" title="Storing Login Details" class="md-nav__link">
+      Storing Login Details
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../advanced/program-options/" title="Program Options" class="md-nav__link">
+      Program Options
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../advanced/block-header-specifications/" title="Block Header Specifications" class="md-nav__link">
+      Block Header Specifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../advanced/blockchain-parameters/" title="Blockchain Parameters" class="md-nav__link">
+      Blockchain Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../advanced/transaction-details/" title="Transaction Details" class="md-nav__link">
+      Transaction Details
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../advanced/verifying-binaries/" title="Verifying Binaries" class="md-nav__link">
+      Verifying Binaries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../advanced/inflation/" title="Inflation" class="md-nav__link">
+      Inflation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../advanced/deleting-your-wallet/" title="Deleting Your Wallet" class="md-nav__link">
+      Deleting Your Wallet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../advanced/hcctl-usage/" title="Advanced hcctl Usage" class="md-nav__link">
+      Advanced hcctl Usage
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../advanced/simnet/" title="Simnet" class="md-nav__link">
+      Simnet
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Research
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Research
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../research/overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../research/hybrid-design/" title="Hybrid Design" class="md-nav__link">
+      Hybrid Design
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../research/decentralized-stake-pooling/" title="Decentralized Stake Pooling" class="md-nav__link">
+      Decentralized Stake Pooling
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../research/elliptic-curve-signature-algorithms/" title="Elliptic Curve Signature Algorithms" class="md-nav__link">
+      Elliptic Curve Signature Algorithms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../research/blake-256-hash-function/" title="BLAKE-256 Hash Function" class="md-nav__link">
+      BLAKE-256 Hash Function
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../research/script-extensions/" title="Script Extensions" class="md-nav__link">
+      Script Extensions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../research/signature-script-isolation-and-fraud-proofs/" title="Signature Script Isolation and Fraud Proofs" class="md-nav__link">
+      Signature Script Isolation and Fraud Proofs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../research/transaction-extensions/" title="Transaction Extensions" class="md-nav__link">
+      Transaction Extensions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../research/schnorr-signatures/" title="Schnorr Signatures" class="md-nav__link">
+      Schnorr Signatures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../research/miscellaneous-improvements/" title="Miscellaneous Improvements" class="md-nav__link">
+      Miscellaneous Improvements
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Contributing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../advanced/contributor-compensation/" title="Contributor Compensation" class="md-nav__link">
+      Contributor Compensation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-2" type="checkbox" id="nav-9-2">
+    
+    <label class="md-nav__link" for="nav-9-2">
+      Guidelines
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-9-2">
+        Guidelines
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../advanced/using-github/" title="Using GitHub" class="md-nav__link">
+      Using GitHub
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../advanced/contributing/" title="Source Code Contributions" class="md-nav__link">
+      Source Code Contributions
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-web-client-wallet" title=" Create your web client wallet" class="md-nav__link">
+     Create your web client wallet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#send-funds-with-the-web-client" title=" Send funds with the web client" class="md-nav__link">
+     Send funds with the web client
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#receive-funds-with-the-web-client" title=" Receive funds with the web client" class="md-nav__link">
+     Receive funds with the web client
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/HcashOrg/hcwiki/edit/master/docs/getting-started/user-guides/web.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="web-client-user-guide"><img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Web Client User Guide<a class="headerlink" href="#web-client-user-guide" title="Permanent link">&para;</a></h1>
+<hr />
+<p>A simple web wallet is available for users who do not want to install
+additional software on their computer.  It is based on
+<a href="https://github.com/bitpay/copay">Copay</a> with Hcash specific changes
+added and can be found at
+<a href="https://h.cash">https://h.cash</a></p>
+<p>There are a couple of things you need to know about the web client
+before you use it:</p>
+<ul>
+<li>You cannot
+  <a href="../../../mining/proof-of-stake/">stake mine</a>
+  with it.</li>
+<li>Your wallet is kept entirely in the local storage of your web
+  browser.  This means that if you delete your local storage, you will
+  delete your wallet and must recreate it from the seed.</li>
+<li>The security of your wallet depends entirely on the security of your
+  web browser.</li>
+<li>You can put a pin on your wallet to prevent sending funds but any
+  other access is dependent entirely on the access controls on your
+  computer, not on the server or any login details.</li>
+</ul>
+<hr />
+<h2 id="create-your-web-client-wallet"><img class="dcr-icon" src="/img/dcr-icons/CreateWallet.svg" /> Create your web client wallet<a class="headerlink" href="#create-your-web-client-wallet" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Step One</p>
+</blockquote>
+<p>Go to <a href="https://h.cash">https://h.cash</a>. You will
+be presented with the <code>Terms and Conditions</code> screen. Pay extra
+attention to the following:</p>
+<p>Just like the command-line wallet, if you lose your seed words or your
+password for sending funds you will lose access to your wallet. There
+is no password reset. Also note that all transactions on Hcash are
+irreversible by design. If you accidentally send funds to the wrong
+address, you will need to ask the recipient to send them back. The
+developers are unable to reverse transactions.</p>
+<p>Click <code>I Agree</code> once you have read the <code>Terms and Conditions</code>. You
+will now see the welcome screen. If this is the first time you
+have used Hcash, click <code>Get Started</code>. If you want to restore a
+previously used wallet, click <code>Import Backup</code>. This guide will
+assume you are just starting out so click <code>Get Started</code>.</p>
+<blockquote>
+<p>Step Two</p>
+</blockquote>
+<p>Click the dropdown in the top left, then click <code>Add wallet</code>. Click
+<code>Create New Wallet</code>. Give your wallet a name then click <code>Create New Wallet</code>.</p>
+<p>A wallet will be generated for you.</p>
+<blockquote>
+<p>Step Three</p>
+</blockquote>
+<p>Your wallet is now created and ready to use. However, before you do
+anything else, you should add a password for sending funds and backup
+the seed words that were used to create your wallet. This is doubly
+true for the web client which does not store a permanent record of
+your wallet. Your wallet data is stored in the browser cache and
+can be deleted quite easily. If you are running in incognito mode,
+it will be deleted as soon as you close the browser. <strong>WITHOUT THIS
+SEED PHRASE YOU LOSE ACCESS TO ALL FUNDS IN YOUR WALLET</strong> should
+the wallet data be deleted. The funds themselves still exist in
+the blockchain, however, without the seed you cannot access them.</p>
+<p>Click the <code>Preferences</code> button on the right opposite your wallet name. There are really only three things you will be interested in here:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Wallet Alias</code></td>
+<td>You can rename the wallet if you wish.</td>
+</tr>
+<tr>
+<td><code>Request Password for Spending Funds</code></td>
+<td>Since your wallet is saved in the browser cache, there is no extra password required to access it. By setting a password here, you ensure that only you can send funds if someone else accesses your browser. Type a password in and click <code>Set</code>. Note the alert that says passwords cannot be recovered. There is no password reset feature on the wallet. If you lose the password, you will never be able to move your coins out of the wallet or use them for proof-of-stake voting.</td>
+</tr>
+<tr>
+<td><code>Backup</code></td>
+<td>This is where you will find your seed words.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Step Four</p>
+</blockquote>
+<p>Click <code>Backup</code>. You will see this screen:</p>
+<p>First of all, read the note. Only use ONE wallet at a time with a
+given seed (See: <a href="#">FAQ</a>). You can have multiple wallets installed on
+different machines, but only one of them should be running at any
+given time. Click <code>Show Wallet Seed</code>. Write this down somewhere safe,
+or put it in an encrypted document to which you will not forget the
+password. This list of words is used to generate the authentication
+key for your wallet. Anyone who possesses this list can access the
+funds in your wallet.</p>
+<blockquote>
+<p><strong>VERY IMPORTANT</strong></p>
+</blockquote>
+<p><strong>DO NOT, UNDER ANY CIRCUMSTANCES, GIVE YOUR SEED WORDS TO ANYONE! NOT EVEN THE DEVELOPERS!</strong></p>
+<p>Once you have written the words down (and have triple-checked that they are correct; capitalization is important), go to the next step.</p>
+<blockquote>
+<p>Step Five</p>
+</blockquote>
+<p>Now that you have written down your seed words and checked them, do it
+again. Seriously. This step is critical. Without this list your wallet
+cannot be reconstructed and no one, not even the developers, can
+restore it. Now that you are sure the list is stored correctly, click
+<code>Delete Words</code>. Click <code>Back</code> twice to get to the main wallet screen.</p>
+<hr />
+<h2 id="send-funds-with-the-web-client"><img class="dcr-icon" src="/img/dcr-icons/Send.svg" /> Send funds with the web client<a class="headerlink" href="#send-funds-with-the-web-client" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Step One</p>
+</blockquote>
+<p>On the main web wallet page, click the <code>Send</code> button at the
+bottom. You will be taken to this page. Note the <code>Advanced Options</code>
+section has already been expanded. In the <code>To</code> field, put in the
+Hcash address of the recipient.</p>
+<blockquote>
+<p>Step Two</p>
+</blockquote>
+<p>In <code>Amount</code>, enter the value in HC to send to the recipient. If you
+wish you can type an optional message in the <code>Note</code> field. Press
+<code>Send</code>. The <code>Use Unconfirmed Funds</code> option lets you use funds that the
+network knows are being sent to you but have not yet been confirmed by
+<a href="../../../mining/proof-of-work/">proof-of-work miners</a>. If
+this is turned on and the amount specified can only be covered by
+using unconfirmed funds, the transaction will not proceed until the
+required funds have been confirmed.</p>
+<hr />
+<h2 id="receive-funds-with-the-web-client"><img class="dcr-icon" src="/img/dcr-icons/Receive.svg" /> Receive funds with the web client<a class="headerlink" href="#receive-funds-with-the-web-client" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Step One</p>
+</blockquote>
+<p>Click the <code>Receive</code> button at the bottom of the window. You will see
+this screen:</p>
+<p>Give the person sending you HC the address displayed (it will start
+with <code>Ds</code>) or they can use the QR code if their wallet or service
+accepts them. You can use the same address as often as you want, but
+for privacy it is recommended that you generate a new address each
+time. Do not worry about being given a duplicate address. There are
+around <code>2.08x10^93</code> possible addresses, so we will probably reach the
+heat death of the universe before we run out of Hcash addresses.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../hcwallet-tickets/" title="Buying Tickets" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Buying Tickets
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../../mining/proof-of-stake/" title="What is Proof-of-Stake?" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                What is Proof-of-Stake?
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            If you wish to improve this site, please <a href="https://github.com/HcashOrg/hcwiki/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/HcashOrg/hcwiki/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>hcwiki v2.0.0. HC Project 2018.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.8eb9be28.js"></script>
+      
+      <script>app.initialize({version:"0.17.5",url:{base:"../../.."}})</script>
+      
+        <script src="../../../js/MathJax-2.7.0/MathJax.js%3Fconfig%3DTeX-AMS-MML_HTMLorMML"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
